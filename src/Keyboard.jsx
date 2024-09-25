@@ -4,7 +4,7 @@ export default function Keyboard({ handleButtonClick }) {
   return (
     <div className="flex items-center justify-center flex-col gap-4 mt-4">
       {letters.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex gap-2">
+        <div key={rowIndex} className="flex gap-1.5 md:gap-2">
           {row.split("").map((key, keyIndex) => (
             <button
               key={keyIndex}
