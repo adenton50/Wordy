@@ -174,7 +174,7 @@ export default function Game() {
               return (
                 <div
                   key={colIndex}
-                  className={`${colorClass} border-2 border-white h-12 w-12 md:h-16 md:w-16 flex items-center justify-center text-3xl`}
+                  className={`${colorClass} border-2 border-white h-14 w-14 md:h-16 md:w-16 flex items-center justify-center text-3xl`}
                 >
                   {letter}
                 </div>
@@ -187,20 +187,20 @@ export default function Game() {
       <div className="flex flex-row gap-4">
         <button
           onClick={() => handleKeyDown("Enter")}
-          className="bg-white font-bold border-0 outline-none border-0 rounded text-xl hover:bg-gray-400 text-black py-2 px-4"
+          className="bg-white font-bold border-0 outline-none border-0 rounded md:text-xl hover:bg-gray-400 text-black py-2 px-4"
         >
           Enter
         </button>
         <button
           onClick={() => handleKeyDown("Backspace")}
-          className="bg-white font-bold border-0 outline-none border-0 rounded text-xl hover:bg-gray-400 text-black py-2 px-4"
+          className="bg-white font-bold border-0 outline-none border-0 rounded md:text-xl hover:bg-gray-400 text-black py-2 px-4"
         >
           Backspace
         </button>
         {gameOver && (
           <button
             onClick={() => window.location.reload()}
-            className="bg-white font-bold border-0 outline-none border-0 rounded text-xl hover:bg-gray-400 text-black py-2 px-4"
+            className="bg-white font-bold border-0 outline-none border-0 rounded md:text-xl hover:bg-gray-400 text-black py-2 px-4"
           >
             Restart Game
           </button>
