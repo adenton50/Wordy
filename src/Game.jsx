@@ -174,7 +174,7 @@ export default function Game() {
               return (
                 <div
                   key={colIndex}
-                  className={`${colorClass} border-2 border-white h-16 w-16 flex items-center justify-center text-3xl`}
+                  className={`${colorClass} border-2 border-white h-12 w-12 md:h-16 md:w-16 flex items-center justify-center text-3xl`}
                 >
                   {letter}
                 </div>
